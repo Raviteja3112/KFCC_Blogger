@@ -1,0 +1,48 @@
+body{
+    background-color: rgb(246, 240, 240);
+    overflow-x: hidden;
+}
+
+.posts {
+    columns: 3;
+    height: max-content;
+    padding: 50px;
+    box-sizing: border-box;
+    column-gap: 50px;
+}
+
+.cards {
+    border: 2px solid rgb(221, 220, 220);
+    break-inside: avoid;
+    margin-bottom: 50px;
+    padding: 10px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    grid-area: 5px;
+    align-items:center;
+    box-shadow: 0px 2px 5px 5px rgb(181, 181, 181);
+    background-color: rgba(207, 206, 206, 0.33);
+}
+
+.enlarge img {
+    width: 75%;
+    border-radius: 15px;
+}
+
+.cards:hover img {
+    transform: scale(1,0.9);
+    box-shadow: 0px 0px 7px 3px purple;
+    border-radius: 15px;
+    transition: all 0.3s linear;
+}
+
+.cards:hover h2{
+    color: darkorchid;
+}
+
+p{
+    font-style: italic;
+    font-size: 20px;
+}
+

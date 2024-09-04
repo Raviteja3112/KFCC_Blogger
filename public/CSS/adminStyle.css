@@ -1,0 +1,52 @@
+body{
+    background-repeat: no-repeat;
+    background-size:cover;
+    background: linear-gradient(55deg,black,purple,blue,orange,yellow,white);
+    height: 98vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: yellow;
+    font-size: x-large;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    gap: 15px;
+    background-color: rgba(245, 245, 245, 0.221);
+    padding: 10px;
+    box-shadow: 1px 1px 8px 1px black;
+    border-radius: 10px;
+}
+
+div{
+    display:grid;
+    grid-template-columns: 1fr auto;
+    justify-items:flex-start;
+    gap: 15px;
+}
+
+input,textarea{
+    height: 25px;
+    width: 275px;
+    border-radius: 10px;
+    font-size: 20px;
+    outline: none;
+    border: none;
+}
+
+textarea{
+    height: 200px;
+    resize: none;
+}
+
+button{
+    width: 75px;
+    height: 35px;
+    position: relative;
+    left: 150px;
+    border-radius: 10px;
+}

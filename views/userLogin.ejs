@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User login Page</title>
+    <link rel="stylesheet" href="../CSS/login.css">
+</head>
+
+<body>
+    
+    <% if(locals.warning) {%>
+        <div class="warning">
+            <h1><%= warningContent %></h1>
+            <button>Ok</button>
+        </div>
+    <% } %>
+
+    <form action="/" method="post">
+        USER 
+        <div class="loginSign">
+            <button class="login" type="button">Login</button>
+            <button class="signup" type="button">SignUp</button>
+        </div>
+        <div class="adminLogin">
+            <div>
+                <img src="../Images/person-circle.svg" alt="">
+                <input type="text" name="userId" placeholder="User Id...">
+            </div>
+    
+            <div>
+                <img src="../Images/file-lock2.svg" alt="">
+                <input type="password" name="password" placeholder="Password....">
+            </div>
+            <a href="/forgotPassword" name="userPassword">ForgotPassword?</a>
+    
+            <div class="loginBut">
+                <input type="submit" value="LogIn" name="clickedButton">
+            </div>
+    
+    
+            <div class="changeAccount">
+                <a href="/adminlogin"><label for="adminLogin">Admin Login</label></a>
+            </div>
+        </div>
+
+
+        <div class="signUp">
+            <input type="text" placeholder="Enter User Id..." name="createUserId">
+            <input type="text" placeholder="Enter Password....." name="createPassword">
+            <input type="text" placeholder="Confirm Password..." name="createConfirmPassword">
+            <button class="create" type="submit" name="clickedButton" value="CreateAccount">Create Account</button>
+        </div>
+    </form>    
+
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" ></script>
+    <script src="../JavaScript/index.js"></script>    
+</body>
+</html>

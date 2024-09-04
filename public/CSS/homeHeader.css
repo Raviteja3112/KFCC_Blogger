@@ -1,0 +1,55 @@
+
+.image img{
+    height: 500px;
+    width: 700px;
+    border-radius: 10px;
+}
+
+.moveImageLeft {
+    transform: translateX(-750px); 
+    transition: transform 2s ease;
+}
+.moveImageRight {
+    transform: translateX(750px); /* Adjust as needed */
+    transition: transform 2s ease;
+}
+
+
+
+.imageAttach {
+    display: flex;
+    gap: 15px; 
+    width:99vw; 
+    position: relative;
+    left: -300px;
+}
+
+
+button{
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: larger;
+    position: relative;
+    top: -300px;
+    font-size: 50px;
+    color: greenyellow;
+    background:none;
+    box-shadow: 0px 0px 4px 2px rgb(176, 246, 249);
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 100px;
+}
+
+.right{
+    margin-left: 25px;
+}
+
+.left{
+    margin-right: 0px;
+}
+
+
+

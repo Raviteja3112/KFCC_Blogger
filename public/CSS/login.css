@@ -1,0 +1,165 @@
+body{
+    background-image: url("https://tb-static.uber.com/prod/image-proc/processed_images/8fe82646a8a3f13b36e996a83752c618/3ac2b39ad528f8c8c5dc77c59abb683d.jpeg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 97vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: yellow;
+    font-size: x-large;
+}
+
+form{
+    border: 2px solid yellow;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 15px;
+    background-color: rgba(102, 95, 95, 0.295);
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 2px yellow;
+    height: 400px;
+    width: 350px;
+}
+
+.loginSign{
+    border: none;
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    width: 150px;
+    height: 45px;
+    border-radius: 15px;
+    border: none;
+    background: linear-gradient(69deg,rgb(58, 58, 230),pink);
+    cursor: pointer;
+}
+
+.up{
+    width: 153px;
+    height: 50px;
+}
+
+.down{
+    width: 145px;
+    height: 40px;
+    background: none;
+    background-color: rgba(0, 0, 0, 0.164);
+    position: relative;
+    top: 5px;
+    font-size: large;
+    color: white;
+}
+
+div{
+    display: flex;
+    border: 2px solid lightblue; 
+    width: 300px;   
+    justify-content: space-between;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 3px;
+    gap: 10px;
+}
+
+.adminLogin{
+    display: flex;
+    flex-direction: column;
+    width: 300px;   
+    justify-content: space-around;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border: none;
+    height: 400px;
+}
+
+
+
+img{
+    height:35px;
+    background-color: wheat;
+    padding: 2px;
+    margin-left: 5px;
+    border-radius: 25px;
+}
+
+input{
+    border: none;
+    width: 245px;
+    border-radius: 15px;
+    outline: none;
+    font-size: large;
+    font-family: cursive;
+    color: lightyellow;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+input:focus{
+    background-color: rgba(255, 255, 255, 0.9);
+    color: purple;
+}
+
+label{
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.adminLogin > a{
+    font-size: medium;
+    position: relative;
+    color: white;
+}
+
+.loginBut,.changeAccount{
+   display: flex;
+   justify-content: center;
+}
+
+
+.signUp{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: inherit;
+    border: none;
+}
+
+.signUp > input{
+    height: 40px;
+    width: 300px;
+}
+
+.signUp > button{
+    position: relative;
+    left: 75px;
+    color: whitesmoke;
+}
+
+
+.warning {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position:absolute;
+    background-color: rgba(255, 0, 0, 0.722);
+    z-index: 1;
+}
+
+.warning > h1{
+    text-align: center;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="CSS/homePage.css"> <!-- Ensure this path is correct -->
+</head>
+<body>
+
+    <h1>Homepage</h1>
+    <%- include("homeHeader.ejs") %>
+
+    <div class="posts">
+        <% if (posts && posts.length > 0) { %> 
+            <% posts.forEach(post => { %>
+                <div class="cards">
+                    <img class="enlarge" src="<%= post.image %>" alt="Post Image" style="max-width: 100%; height: auto;"> <!-- Add styling to prevent oversized images -->
+                    <h2><%= post.heading %></h2>
+                    <p><%= post.content %></p>
+                </div>
+            <% }) %>
+        <% } else { %>
+            <p>No posts available.</p> 
+        <% } %>
+    </div>
+
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" ></script>
+    <script src="/public/JavaScript/homePage.js"></script>
+
+</body>
+</html>
